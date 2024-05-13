@@ -7,10 +7,9 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 public class EmbeddingModelProducer {
 
-  @Produces
+ @Produces
   public EmbeddingModel embeddingModel() {
-    // TODO: initialize embedding model here
-    return null;
+    return new AllMiniLmL6V2EmbeddingModel();
   }
 }
 
